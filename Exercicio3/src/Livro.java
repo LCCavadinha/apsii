@@ -1,6 +1,6 @@
 public class Livro extends Produto {
 
-    public String autor;
+    private String autor;
 
     public String getAutor() {
         return autor;

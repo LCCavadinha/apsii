@@ -1,6 +1,6 @@
-public class CD extends Produto {
+public class CD extends Produto implements InfoGerais {
 
-    public int numFaixas;
+    private int numFaixas;
 
     public int getNumFaixas() {
         return numFaixas;
@@ -8,5 +8,12 @@ public class CD extends Produto {
 
     public void setNumFaixas(int numFaixas) {
         this.numFaixas = numFaixas;
+    }
+
+    @Override
+    public void exibeInformacoes() {
+        System.out.println("Nome: " + getNome());
+        System.out.println("Preço: " + getPreco());
+        System.out.println("Número de faixas: " + numFaixas);
     }
 }

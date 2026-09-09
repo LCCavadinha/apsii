@@ -1,6 +1,6 @@
 public class Produto {
-    public String nome;
-    public double preco;
+    private String nome;
+    private double preco;
 
     public String getNome() {
         return nome;
